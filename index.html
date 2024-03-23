@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnovateHub</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <i class="fa-solid fa-bars menuIcon"></i>
+    <header class="navbar">
+      <nav class="sidebar">
+        <!-- Profile Section -->
+        <div class="profile">
+          <div class="inner-profile">
+            <div class="logo">
+              <img
+                src="https://unsplash.com/blog/content/images/max/2560/1-VnKoValwGK3-d1bZhD6sVA.jpeg"
+                alt="Img"
+              />
+            </div>
+            <div class="name">
+              <p class="lite">INC</p>
+              <p class="bold">InnovateHub</p>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./assets/p0.jpg" alt="" />
+          </div>
+        </div>
+        <div class="teams">
+          <div class="team">
+            <div class="team-inner">
+              <i class="fa-brands fa-creative-commons-sampling-plus"></i>
+              <span>Design Team</span>
+            </div>
+            <p class="lite">x+1</p>
+          </div>
+          <div class="team">
+            <div class="team-inner">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span>Marketing team</span>
+            </div>
+            <p class="lite">x+2</p>
+          </div>
+          <div class="team">
+            <div class="team-inner">
+              <i class="fa-solid fa-code"></i>
+              <span>Development team</span>
+            </div>
+            <p class="lite">x+3</p>
+          </div>
+          <form class="add-team lite" id="addTeamForm">
+            <i class="fa-regular fa-square-plus" id="addTeamButton"></i>
+            <input type="text" placeholder="Create a Team" class="addteam" />
+          </form>
+        </div>
+        <div class="folders">
+          <div class="folder lite">
+            <span>FOLDERS</span>
+            <i class="fa-solid fa-plus lite" id="addTeamButton"></i>
+          </div>
+          <ul class="folders-list">
+            <div class="products">
+              <div>
+                <i class="fa-regular fa-folder"></i>
+                <span>Products</span>
+              </div>
+              <div class="actions">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <ul class="productsList">
+              <li>Roadmap</li>
+              <li>Feedback</li>
+              <li>Performance</li>
+              <li>Team</li>
+              <li>Analytics</li>
+              <li>
+                <i class="fa-regular fa-square-plus"></i>
+                <span>Add new sub</span>
+              </li>
+            </ul>
+          </ul>
+          <ul class="folders-list">
+            <div class="products">
+              <div>
+                <i class="fa-regular fa-folder"></i>
+                <span>Sales</span>
+              </div>
+              <div class="actions">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <ul class="productsList">
+              <li>Roadmap</li>
+              <li>Feedback</li>
+              <li>Performance</li>
+              <li>Team</li>
+              <li>Analytics</li>
+              <li>
+                <i class="fa-regular fa-square-plus"></i>
+                <span>Add new sub</span>
+              </li>
+            </ul>
+          </ul>
+          <ul class="folders-list">
+            <div class="products">
+              <div>
+                <i class="fa-regular fa-folder"></i>
+                <span>Design</span>
+              </div>
+              <div class="actions"> 
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <ul class="productsList">
+              <li>Roadmap</li>
+              <li>Feedback</li>
+              <li>Performance</li>
+              <li>Team</li>
+              <li>Analytics</li>
+              <li>
+                <i class="fa-regular fa-square-plus"></i>
+                <span>Add new sub</span>
+              </li>
+            </ul>
+          </ul>
+          <ul class="Office">
+            <i class="fa-regular fa-folder"></i>
+            <span>Office</span>
+          </ul>
+          <ul class="Legal">
+            <i class="fa-regular fa-folder"></i>
+            <span>Legal</span>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer">
+        <div>
+          <i class="fa-solid fa-user-plus"></i>
+          <span>Invite teammates</span>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-question"></i>
+          <span>Help and first step</span>
+        </div>
+        <div class="trail">
+          <div>
+            <i class="fa-solid fa-7"></i>
+            <span>Days left on trail</span>
+          </div>
+          <button>Add billing</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="header-main">
+          <div>
+            <h1>Products</h1>
+          </div>
+          <div class="search">
+            <form class="form">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search for..." />
+            </form>
+            <i class="fa-regular fa-comments"></i>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
+        <div class="filters">
+          <div class="menu">
+            <div id="allBrands">
+              <i class="fa-brands fa-hornbill"></i>
+              <span>All Brands</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div>
+              <span>Desk</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div>
+              <span>Tags</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div id="sort" class="lite">
+              <i class="fa-solid fa-arrow-down-wide-short"></i>
+              <span>Sort</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div id="showFilters" class="lite">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Filter</span>
+                <select id="tagFilter">
+                  <option value=""></option>
+                  <option value="B2B">B2B</option>
+                  <option value="B2C">B2C</option>
+                  <option value="Transportation">Transportation</option>
+                  <option value="Technology">Technology</option>
+                  <option value="SAAS">SAAS</option>
+                  <option value="Web services">Web services</option>
+                  <option value="online">online</option>
+                  <option value="E-commerce">E-commerce</option>
+                  <option value="Automation">Automation</option>
+                </select>
+            </div>
+          </div>
+          <div class="meetings">
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span>Meeting</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-boxes-packing"></i>
+              <span>import/export</span>
+            </div>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr class="table-head">
+                <th class="brand">
+                  <div>
+                    <input type="checkbox" />
+                    <span>Brand</span>
+                  </div>
+                  <i class="fa-solid fa-plus"></i>
+                </th>
+                <th>Description</th>
+                <th>Members</th>
+                <th>Categories</th>
+                <th>Tags</th>
+                <th>Next Meeting</th>
+                <th><i class="fa-solid fa-plus"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/7/76/Wix.com_website_logo.svg"
+                      alt=""
+                    />
+                    <span>wix</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <span>2</span>
+                  </div>
+                </td>
+                <td class="description">Developed a personalized..</td>
+                <td>
+                  <div class="users">
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p6.jpg" alt="" />
+                    <img src="./assets/p5.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">Automation</td>
+                <td>
+                  <span> #Digital information </span>
+                </td>
+                <td>
+                  <span>In 30 mins</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/shopify.svg" alt="" />
+                    <span>Shopify</span>
+                  </div>
+                </td>
+                <td class="description">introduce a clous based p..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p1.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>E-commerce</span>
+                  <span>B2B</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#onlne products</span>
+                    <span>#Digital</span>
+                  </span>
+                </td>
+                <td>
+                  <span>Tommorow</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/mailchimp.svg" alt="" />
+                    <span>mailchimp</span>
+                  </div>
+                </td>
+                <td class="description">Develop a mobile app aim..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p6.jpg" alt="" />
+                    <img src="./assets/p5.jpg" alt="" />
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>SAAS</span>
+                  <span>Mobile</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#Technology</span>
+                    <span>#Cloud</span>
+                  </span>
+                </td>
+                <td>
+                  <span>Tommorow</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/paypal.svg" alt="" />
+                    <span>Paypal</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <span>7</span>
+                  </div>
+                </td>
+                <td class="description">This program could include..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p6.jpg" alt="" />
+                    <img src="./assets/p5.jpg" alt="" />
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p1.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>buy/sell online</span>
+                  <span>online</span>
+                </td>
+                <td>
+                  <span>#Marketplace</span>
+                </td>
+                <td>
+                  <span>in 6 hours</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/disney.svg" alt="" />
+                    <span>Disney</span>
+                  </div>
+                </td>
+                <td class="description">introduce a B2B solution for..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>B2B</span>
+                  <span>B2C</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#bussiness</span>
+                    <span>#partnership</span>
+                  </span>
+                </td>
+                <td>
+                  <span>No contact</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/intercom.svg" alt="" />
+                    <span>Intercom</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <span>9</span>
+                  </div>
+                </td>
+                <td class="description">implement an AI drive..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p6.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>Technology</span>
+                  <span>SAAS</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#onlne products</span>
+                    <span>#Digital</span>
+                  </span>
+                </td>
+                <td>
+                  <span>in 1 hour</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/google.svg" alt="" />
+                    <span>Google</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <span>9</span>
+                  </div>
+                </td>
+                <td class="description">offer a comprehansive..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p6.jpg" alt="" />
+                    <img src="./assets/p5.jpg" alt="" />
+                    <img src="./assets/p1.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>Finance</span>
+                  <span>Automation</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#smart finance</span>
+                    <span>#workfromhome</span>
+                  </span>
+                </td>
+                <td>
+                  <span>in 30 minutes</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/evernote.svg" alt="" />
+                    <span>Evernote</span>
+                  </div>
+                </td>
+                <td class="description">this could include e..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>Transportation</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#Logitics tech</span>
+                    <span>#UX</span>
+                  </span>
+                </td>
+                <td>
+                  <span>Next Month</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox"  class="checkboxInput"/>
+                    <img src="./assets/microsoft.svg" alt="" />
+                    <span>Microsoft</span>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <span>4</span>
+                  </div>
+                </td>
+                <td class="description">launch and advisory serices..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p6.jpg" alt="" />
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p5.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>Publishing</span>
+                  <span>B2C</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#B2CMarketing</span>
+                    <span>#Rental</span>
+                  </span>
+                </td>
+                <td>
+                  <span>No contact</span>
+                </td>
+              </tr>
+              <tr class="table-body">
+                <td class="company">
+                  <div>
+                    <input type="checkbox" />
+                    <img src="./assets/invision.svg" alt="" />
+                    <span>Invsion</span>
+                  </div>
+                </td>
+                <td>the tool would analyze tre..</td>
+                <td>
+                  <div>
+                    <img src="./assets/p1.jpg" alt="" />
+                    <img src="./assets/p2.jpg" alt="" />
+                    <img src="./assets/p3.jpg" alt="" />
+                    <img src="./assets/p4.jpg" alt="" />
+                    <img src="./assets/p6.jpg" alt="" />
+                  </div>
+                </td>
+                <td class="category">
+                  <span>Web services</span>
+                </td>
+                <td>
+                  <span>
+                    <span>#Amigration</span>
+                  </span>
+                </td>
+                <td>
+                  <span>Next Month</span>
+                </td>
+              </tr>
+              <tr class="table-body lite">
+                <td class="company">
+                  10 count
+                </td>
+                <td>
+                  + Add Calulation
+                </td>
+                <td>
+                  + Add Calulation
+                </td>
+                <td class="category">
+                  + Add Calulation
+                </td>
+                <td>
+                  + Add Calulation
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="checkboxs">
+          <div class="checkbox-inner">
+            <div>
+              <span class="selected-count">0</span>
+              <span>Selected</span>
+            </div>
+            <div class="archive-btn">
+              <i class="fa-solid fa-trash-can"></i>
+              <span>archieve</span>
+            </div>
+            <div class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+              <span>delete</span>
+            </div>
+            <div>
+              <span>more</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <span>
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

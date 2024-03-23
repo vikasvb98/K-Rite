@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Merriweather&family=Noto+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+.menuIcon{
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    display: none !important;
+    
+}
+.navbar{
+    width: 25rem;
+    height: 100%;
+    padding: .5rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(168, 164, 164);
+    border-radius: .8rem;
+}
+.sidebar{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    position: relative;
+}
+.profile{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-profile{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.logo img{
+    width: 3.5rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.lite{
+    font-weight: 200;
+}
+.bold{
+    font-weight: 600;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.user img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.teams{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border: 1px solid rgb(168, 164, 164);
+    border-radius: .8rem;
+}
+.teams p{
+    padding: 0 0.2rem;
+    border: .5px solid rgb(192, 191, 191) ;
+    border-radius: .5rem;
+}
+.team{
+    padding: .6rem .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    font-weight: 600;
+}
+.team:hover{
+    background-color: rgb(192, 188, 188);
+    border-radius: .6rem;
+    cursor: pointer;
+}
+.add-team{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    border-top: .2px solid rgb(192, 188, 188);
+}
+.add-team:hover{
+    background-color: rgb(192, 188, 188);
+    border-radius: .8rem;
+}
+.add-team i {
+    padding-left: .5rem;
+}
+.addteam{
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.3rem;
+    border: none;
+    text-align: center;
+}
+.addteam:focus{
+    border: none;
+    outline: none;
+}
+.addteam:hover{
+   border: none;
+   background-color:rgb(192, 188, 188);
+   border-radius: .8rem;
+}
+.addteam:hover{
+    border: none;
+    background-color:rgb(192, 188, 188);
+ }
+.team-inner{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+.folders{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.folder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.folder i, .actions i{
+    cursor: pointer;
+}
+.folders ul {
+    gap: .5rem;
+}
+.folders-list{
+    min-height: 2rem;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.Office,.Legal{
+    padding: 0.5rem 0.5rem;
+}
+.Office:hover,.Legal:hover{
+    padding: 0.5rem 0.5rem;
+    background-color:rgb(192, 188, 188);
+    border-radius: .8rem;
+}
+.folders-list:hover{
+    background-color:rgb(192, 188, 188);
+    border-radius: .8rem;
+}
+.folders-list li{
+    padding-left: 1rem;
+    list-style: none;
+}
+.productsList {
+    display: none;
+}
+.productsList.show {
+    display: block;
+    font-size: medium;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+.footer div{
+    font-size: .8rem;
+    font-weight: 600;
+    height: 2rem;
+    padding: 0.5rem 0.5rem;
+}
+.footer div:hover{
+    background-color:rgb(192, 188, 188);
+    border-radius: .8rem;
+}
+.trail{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.trail button{
+    cursor: pointer;
+    background: black;
+    color: white;
+    height: 1.6rem;
+    width: 5rem;
+    border-radius: .4rem;
+
+}
+.main{
+    padding: 1.5rem;
+    width: 100%;
+    height: 100vh;
+}
+.header-main{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#allBrands{
+    cursor: pointer;
+}
+#tagFilter{
+    border: none;
+    outline: none;
+    background-color: rgb(229, 229, 230);
+}
+.form{
+    padding: .5rem;
+    border: 1px solid rgb(192, 188, 188);
+    border-radius: .4rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.search i {
+    font-weight: 600;
+    cursor: pointer;
+}
+.form input{
+    border: none;
+}
+.form input:focus{
+    border: none;
+    outline: none;
+}
+.filters{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.menu div{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    background-color: rgb(229, 229, 230);
+}
+.meetings{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.meetings div{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    background-color: rgb(229, 229, 230)
+}
+.table-container{
+    height: 65vh;
+    overflow: hidden;
+}
+table, th {
+    padding: 1rem;
+    border: 1px solid rgb(229, 229, 230);
+    border-collapse: collapse;
+    
+  }
+td{
+    border: 1px solid rgb(229, 229, 230);
+    border-collapse: collapse;
+    word-wrap: break-word;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #fff5;
+    box-shadow: 0 .4rem .8rem #0005;
+    
+  }
+
+ .brand{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+  td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: .5rem;
+    text-align: center;
+  }
+  .description{
+    padding: .5rem .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .company{
+    padding-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-top: 1px solid rgb(229, 229, 230);
+  }
+  .company div{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+  tbody{
+    overflow: auto;
+  }
+  .checkboxs{
+    display: flex;
+    align-items: end;
+    padding-bottom: 1rem;
+    justify-content: center;
+    height: 5rem;
+    width: 100%;
+    display: none;
+  }
+  .checkbox-inner{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .checkbox-inner div{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    height: 2rem;
+    width: 5rem;
+  }
+
+td img {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    vertical-align:  middle;
+    position: relative;
+    margin-right: -10px; 
+    border: .5px solid rgb(229, 229, 230);
+    object-fit: fill;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .menuIcon{
+        display: block !important;
+    }
+}
+
